@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Register form</title>
 </head>
 <body>
+<h1>Register</h1>
+
+<form>
+ <div>
+  <label for="name">First Name:</label>
+  <input id="name" type="text" placeholder="John" required>
+  <label for="surname">Last Name:</label>
+  <input id="surname" type="text" placeholder="Smith" required>
+
+ </div>
+ <div>
+  <label for="Male">Male</label>
+  <input id="Male" type="radio" name="genderChoice" value="Male">
+  <label for="Female">Female</label>
+  <input id="Female" type="radio" name="genderChoice" value="Female">
+  <label id="Other">Other</label>
+  <input id="Other" type="radio" name="genderChoice" value="Other">
+ </div>
+ <div>
+ 	<label for="Email">Email:</label>
+ 	<input id="Email" type="email" placeholder="your email" required>
+ 	<label for="Password">Password:</label>
+ 	<input id="Password" type="password" minlength="10" placeholder="password" required>
+ </div>
+ <div>
+ 	<label>Birthday:
+ 		<select name="day">
+ 			<option>day</option>
+ 			<option>1</option>
+ 			<option>2</option>
+ 			<option>3</option>
+ 			<option>4</option>
+ 			<option>5</option>
+ 		</select>
+ 		<select name="month">
+ 			<option>month</option>
+ 			<option>january</option>
+ 			<option>february</option>
+ 			<option>march</option>
+ 			<option>april</option>
+ 			<option>may</option>
+ 		</select>
+ 		<select name="year">
+ 			<option>year</option>
+ 			<option>1984</option>
+ 			<option>1900</option>
+ 			<option>2001</option>
+ 			<option>2020</option>
+ 			<option>2045</option>
+ 		</select>
+ 		</label>
+ 	</div>
+    <div>
+		<p>I agree for the terms and conditions</p>
+		<input type="checkbox" required>
+	</div>
+ <button>Submit</button>
+</form>
 
 </body>
 </html>
